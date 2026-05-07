@@ -1,6 +1,6 @@
 # CRT UI Shader Documentation
 
-![][readme-assets/image1]
+![](readme-assets/image1.png)
 
 # Setup
 
@@ -13,7 +13,7 @@ The shader can be applied in two ways.
 
 1. Open the Unity project (it was created with Unity 6.4)  
 2. In the Assets view, click on the CRT Shader material. The sliders and checkboxes on the right allow adjusting various properties of the shader  
-   ![][readme-assets/image2]
+   ![](readme-assets/image2.png)
 
 ## Adding the CRT Shader to Your Own Unity Project
 
@@ -21,23 +21,23 @@ The CRT Shader can be applied to uGUI images.
 
 1. Import the image you want to apply the shader to as an asset  
 2. Set Texture Type to *Spite* and Sprite Mode to *Single* using the dropdowns  
-   ![][readme-assets/image3]  
+   ![](readme-assets/image3.png)
 3. Import the shader code. It will be a script (.shader extension).  
-   ![][readme-assets/image4]  
+   ![](readme-assets/image4.png)
 4. Create a new material.  
-   ![][readme-assets/image5]  
+   ![](readme-assets/image5.png) 
 5. Set the material’s shader script to the CRT Shader using the dropdown.  
-   ![][readme-assets/image6]  
+   ![](readme-assets/image6.png)
 6. In you Scene view create a Unity GameObject for your image. To do that, in the Scene Hierarchy got to New \-\> UI (Canvas) \-\> Image  
 7. Apply the sprite asset you created in step 2 as the Source Image for your Image UI Object.  
-   ![][readme-assets/image7]  
+   ![](readme-assets/image7.png)
 8. Assign the material you created in Step 4 as a material to the Image  
 9. Now the shader is applied to your image. You can modify the shader properties by changing the code of the underlying script or adjusting the checkboxes and sliders when clicking on the material.
 
 # Explanation of the Shader Properties
 
 Various shader appearance properties can be tweaked. These can be adjusted in the shader code or when clicking on the material and adjusting the following checkboxes and sliders:  
-![][readme-assets/image8]  
+![](readme-assets/image8.png)
 The other properties are default Unity shader properties that are not unique to this CRT effect.
 
 The CRT shader consists of three main components. Each of these components can be disabled by unchecking the respective checkbox.
