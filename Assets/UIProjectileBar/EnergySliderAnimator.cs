@@ -10,8 +10,8 @@ public class EnergySliderAnimator : MonoBehaviour
     public AnimationCurve slideCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
     public Color edgeCoreColor = Color.white;
     public Color edgeGlowColor = new Color(0.45f, 0.95f, 1f, 0.65f);
-    public Vector2 edgeCoreSize = new Vector2(5f, 30f);
-    public Vector2 edgeGlowSize = new Vector2(18f, 42f);
+    public Vector2 edgeCoreSize = new Vector2(14f, 20f);
+    public Vector2 edgeGlowSize = new Vector2(36f, 28f);
     public int sparkCount = 9;
     public Vector2 sparkSizeRange = new Vector2(2f, 5f);
     public Vector2 sparkSpread = new Vector2(18f, 26f);
@@ -123,8 +123,8 @@ public class EnergySliderAnimator : MonoBehaviour
         edgeRoot.anchoredPosition = Vector2.zero;
         edgeRoot.sizeDelta = edgeGlowSize;
 
-        glowSprite = CreateSoftSprite("SliderEdgeGlow", 48, 96, 1.25f, 0.55f, 2.2f);
-        coreSprite = CreateSoftSprite("SliderEdgeCore", 16, 96, 4.5f, 0.18f, 1.5f);
+        glowSprite = CreateSoftSprite("SliderEdgeGlow", 96, 72, 0.85f, 1.15f, 2.4f);
+        coreSprite = CreateSoftSprite("SliderEdgeCore", 64, 64, 1f, 1f, 2.2f);
         sparkSprite = CreateSoftSprite("SliderEdgeSpark", 32, 32, 1f, 1f, 2.4f);
 
         edgeGlow = CreateEdgeImage("Glow", edgeRoot, edgeGlowColor, edgeGlowSize, glowSprite);
